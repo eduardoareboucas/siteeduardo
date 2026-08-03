@@ -12,7 +12,7 @@
 <style>
   :root{
     --paper:#E7E3DA;--panel:#F1EEE7;--ink:#1B1A17;--muted:#57544D;--faint:#8A867C;
-    --line:#CCC7BB;--line-soft:#D9D4C9;--accent:#7C2D2A;--accent-soft:rgba(124,45,42,.10);
+    --line:#CCC7BB;--line-soft:#D9D4C9;--accent:#4F5D45;--accent-soft:rgba(79,93,69,.10);
     --serif:"Newsreader",Georgia,"Times New Roman",serif;
     --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
     --maxw:1180px;
@@ -31,7 +31,7 @@
 
   /* SIDEBAR */
   .side{position:sticky;top:0;align-self:start;padding:clamp(30px,4vw,54px) 0 40px}
-  .avatar{width:120px;height:120px;border-radius:50%;background:var(--panel);border:1px solid var(--line);overflow:hidden;margin-bottom:20px}
+  .avatar{width:168px;height:168px;border-radius:50%;background:var(--panel);border:1px solid var(--line);overflow:hidden;margin:0 auto 22px}
   .avatar img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
   .side .name{font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.18;letter-spacing:-.01em;margin:0 0 8px}
   .side .role{font-family:var(--mono);font-size:11.5px;line-height:1.55;letter-spacing:.02em;color:var(--muted);text-transform:uppercase;margin:0 0 6px}
@@ -61,13 +61,9 @@
   .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(38px,6.4vw,64px);line-height:1.02;letter-spacing:-.02em;margin:0 0 22px}
   .lead{font-size:clamp(19px,2.3vw,23px);line-height:1.5;max-width:38ch;color:var(--ink);margin:0}
   .lead em{font-style:italic;color:var(--accent)}
-  .pendulum{margin:26px 0 0;display:block}
-  .pendulum svg{overflow:visible;display:block}
-  .arc{fill:none;stroke:var(--accent);stroke-width:1.3;stroke-dasharray:220;stroke-dashoffset:220;animation:draw 1.6s ease forwards .25s}
-  .swing{transform-box:fill-box;transform-origin:50% 0;animation:sway 5.2s ease-in-out .9s infinite}
-  @keyframes draw{to{stroke-dashoffset:0}}
-  @keyframes sway{0%,100%{transform:rotate(-13deg)}50%{transform:rotate(13deg)}}
-  @media (prefers-reduced-motion:reduce){.arc{stroke-dashoffset:0;animation:none}.swing{animation:none;transform:rotate(0)}}
+  .hero .identity{margin:28px 0 0}
+  .hero .role{font-family:var(--mono);font-size:12px;line-height:1.6;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+  .hero .place{font-family:var(--mono);font-size:12px;letter-spacing:.03em;color:var(--faint);margin:0}
 
   section{padding-top:clamp(46px,7vw,82px)}
   .eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 24px}
@@ -130,6 +126,7 @@
     .wrap{grid-template-columns:1fr;gap:0}
     .side{position:static;padding:clamp(28px,7vw,40px) 0 8px}
     .side .name{font-size:24px}
+    .avatar{margin-left:0;margin-right:0}
     .nav{display:none}
     main{padding-top:8px}
     .projects{grid-template-columns:1fr}
@@ -148,14 +145,6 @@
   <!-- ================= SIDEBAR ================= -->
   <aside class="side">
     <div class="avatar"><img src="eduardo.jpg" alt="Eduardo Azevedo Rebouças"></div>
-    <p class="name">Eduardo Azevedo Rebouças</p>
-    <p class="role">
-      <span class="en">MSc in Psychology · Federal University of Amazonas (UFAM)</span>
-      <span class="pt">Mestrando em Psicologia · Universidade Federal do Amazonas (UFAM)</span>
-    </p>
-    <p class="place">Manaus, BR · Manchester, UK</p>
-
-    <hr class="rule">
 
     <ul class="links">
       <li><a href="mailto:eduardoareboucas@gmail.com"><span class="k">@</span><span>eduardoareboucas@gmail.com</span></a></li>
@@ -190,16 +179,13 @@
       <h1>Eduardo Azevedo Rebouças</h1>
       <p class="lead en">Psychologist and researcher on masculinities, gender-based violence, cyberpsychology and psychometrics, moving toward <em>data science for public policy</em>.</p>
       <p class="lead pt">Psicólogo e pesquisador em masculinidades, violência de gênero, ciberpsicologia e psicometria, caminhando para a <em>ciência de dados aplicada a políticas públicas</em>.</p>
-      <span class="pendulum" aria-hidden="true">
-        <svg width="150" height="58" viewBox="0 0 150 58">
-          <path class="arc" d="M12 14 Q75 62 138 14"/>
-          <g class="swing">
-            <line x1="75" y1="6" x2="75" y2="40" stroke="var(--ink)" stroke-width="1.2"/>
-            <circle cx="75" cy="43" r="4.4" fill="var(--accent)"/>
-          </g>
-          <circle cx="75" cy="6" r="2" fill="var(--ink)"/>
-        </svg>
-      </span>
+      <div class="identity">
+        <p class="role">
+          <span class="en">MSc in Psychology · Federal University of Amazonas (UFAM)</span>
+          <span class="pt">Mestrando em Psicologia · Universidade Federal do Amazonas (UFAM)</span>
+        </p>
+        <p class="place">Manaus, BR · Manchester, UK</p>
+      </div>
     </header>
 
     <!-- ABOUT -->
