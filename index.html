@@ -4,17 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eduardo Azevedo Rebouças</title>
-<meta name="description" content="Psychologist and researcher on masculinities, gender-based violence and reflexive groups with men. Psicólogo e pesquisador em masculinidades, violência de gênero e grupos reflexivos com homens.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E7E3DA'/%3E%3Cpath d='M6 9 A16 16 0 0 0 26 9' fill='none' stroke='%237C2D2A' stroke-width='1.6'/%3E%3Cline x1='16' y1='9' x2='16' y2='22' stroke='%231B1A17' stroke-width='1.2'/%3E%3Ccircle cx='16' cy='23' r='2.4' fill='%237C2D2A'/%3E%3C/svg%3E">
+<meta name="description" content="Psychologist and researcher on masculinities, gender-based violence, cyberpsychology and psychometrics. Psicólogo e pesquisador em masculinidades, violência de gênero, ciberpsicologia e psicometria.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%23E7E3DA'/%3E%3Ctext%20x='16'%20y='24'%20font-family='Georgia,serif'%20font-size='24'%20font-weight='600'%20text-anchor='middle'%20fill='%231B1A17'%3EE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#E7E3DA;--panel:#F1EEE7;--ink:#1B1A17;--muted:#57544D;--faint:#8A867C;
-    --line:#CCC7BB;--line-soft:#D9D4C9;--accent:#4F5D45;--accent-soft:rgba(79,93,69,.10);
+    --line:#CCC7BB;--line-soft:#D9D4C9;--accent:#4F5D45;
     --serif:"Newsreader",Georgia,"Times New Roman",serif;
-    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
     --maxw:1180px;
   }
   *{box-sizing:border-box}
@@ -31,101 +30,95 @@
 
   /* SIDEBAR */
   .side{position:sticky;top:0;align-self:start;padding:clamp(30px,4vw,54px) 0 40px}
-  .avatar{width:168px;height:168px;border-radius:50%;background:var(--panel);border:1px solid var(--line);overflow:hidden;margin:0 auto 22px}
+  .avatar{width:168px;height:168px;border-radius:50%;background:var(--panel);border:1px solid var(--line);overflow:hidden;margin:0 auto 24px}
   .avatar img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
-  .side .name{font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.18;letter-spacing:-.01em;margin:0 0 8px}
-  .side .role{font-family:var(--mono);font-size:11.5px;line-height:1.55;letter-spacing:.02em;color:var(--muted);text-transform:uppercase;margin:0 0 6px}
-  .side .place{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.02em;margin:0}
-  .rule{height:1px;background:var(--line-soft);border:0;margin:22px 0}
   .links{list-style:none;margin:0;padding:0}
-  .links li{margin:0 0 3px}
-  .links a{display:flex;align-items:baseline;gap:10px;font-family:var(--mono);font-size:12.5px;letter-spacing:.01em;color:var(--ink);padding:4px 0}
+  .links li{margin:0 0 2px}
+  .links a{display:flex;align-items:baseline;gap:10px;font-size:15px;color:var(--ink);padding:4px 0}
   .links a:hover{color:var(--accent);text-decoration:none}
-  .links .k{color:var(--faint);width:16px;flex:0 0 auto;text-align:center}
+  .links .k{color:var(--faint);width:16px;flex:0 0 auto;text-align:center;font-size:13px}
   .links a:hover .k{color:var(--accent)}
-  .langbox{display:flex;align-items:center;gap:8px;margin-top:6px}
-  .langbox .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase}
+  .rule{height:1px;background:var(--line-soft);border:0;margin:22px 0}
+  .langbox{display:flex;align-items:center;gap:10px}
+  .langbox .lbl{font-size:12px;letter-spacing:.1em;color:var(--faint);text-transform:uppercase}
   .pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--panel)}
-  .pill button{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.05em;border:0;background:transparent;color:var(--muted);padding:5px 13px;cursor:pointer;transition:background .18s,color .18s}
+  .pill button{font-family:var(--serif);font-size:14px;letter-spacing:.03em;border:0;background:transparent;color:var(--muted);padding:4px 14px;cursor:pointer;transition:background .18s,color .18s}
   .pill button[aria-pressed="true"]{background:var(--accent);color:#F3EFE7}
   .nav{list-style:none;margin:26px 0 0;padding:0}
-  .nav a{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:6px 0}
+  .nav a{display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.02em;color:var(--muted);padding:6px 0}
   .nav a:hover{color:var(--ink);text-decoration:none}
-  .nav a .tick{width:16px;height:1px;background:var(--line);transition:width .2s,background .2s}
+  .nav a .tick{width:14px;height:1px;background:var(--line);transition:width .2s,background .2s}
   .nav a.active{color:var(--ink)}
-  .nav a.active .tick{width:26px;background:var(--accent)}
+  .nav a.active .tick{width:24px;background:var(--accent)}
 
   /* MAIN */
   main{padding:clamp(30px,4vw,54px) 0 60px;min-width:0}
   .hero{padding-bottom:clamp(28px,5vw,44px);border-bottom:1px solid var(--line-soft)}
-  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(38px,6.4vw,64px);line-height:1.02;letter-spacing:-.02em;margin:0 0 22px}
-  .lead{font-size:clamp(19px,2.3vw,23px);line-height:1.5;max-width:38ch;color:var(--ink);margin:0}
-  .lead em{font-style:italic;color:var(--accent)}
-  .hero .identity{margin:28px 0 0}
-  .hero .role{font-family:var(--mono);font-size:12px;line-height:1.6;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
-  .hero .place{font-family:var(--mono);font-size:12px;letter-spacing:.03em;color:var(--faint);margin:0}
+  .hero h1{font-weight:500;font-size:clamp(38px,6.4vw,64px);line-height:1.02;letter-spacing:-.02em;margin:0 0 22px}
+  .lead{font-size:clamp(19px,2.3vw,23px);line-height:1.5;max-width:40ch;color:var(--ink);margin:0}
+  .identity{margin:26px 0 0}
+  .identity .role{font-size:15px;line-height:1.55;color:var(--muted);margin:0 0 3px}
+  .identity .place{font-size:15px;color:var(--faint);margin:0}
 
   section{padding-top:clamp(46px,7vw,82px)}
-  .eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 24px}
-  .eyebrow::before{content:"";width:20px;height:1px;background:var(--accent)}
+  .eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 24px}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--line)}
   .prose p{margin:0 0 18px;max-width:66ch}
   .prose p:last-child{margin-bottom:0}
-  .eixos{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
-  .eixos span{font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 13px;background:var(--panel)}
+  .areas{margin:24px 0 0;font-size:15.5px;color:var(--muted);max-width:66ch}
+  .areas .lbl{color:var(--faint)}
 
   .rows{list-style:none;margin:0;padding:0}
-  .rows li{display:grid;grid-template-columns:132px 1fr;gap:clamp(12px,2.5vw,30px);padding:20px 0;border-top:1px solid var(--line-soft)}
+  .rows li{display:grid;grid-template-columns:130px 1fr;gap:clamp(12px,2.5vw,30px);padding:20px 0;border-top:1px solid var(--line-soft)}
   .rows li:first-child{border-top:0}
-  .rows .lab{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding-top:4px}
+  .rows .lab{font-size:14px;letter-spacing:.02em;color:var(--faint);padding-top:2px}
   .rows .body{font-size:16.5px;line-height:1.5}
-  .rows .body b{font-weight:600}
-  .rows .body .gloss{font-weight:400;color:var(--faint)}
-  .rows .body .sub{display:block;font-size:14.5px;color:var(--muted);margin-top:4px}
-  .rows .body .sub i{font-style:italic}
+  .rows .body .nm{font-weight:500}
+  .rows .body .gloss{color:var(--faint)}
+  .rows .body .sub{display:block;font-size:14.5px;color:var(--muted);margin-top:3px}
+  .rows .body .title{display:block;font-size:14.5px;color:var(--muted);margin-top:3px}
 
-  .projects{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:4px;overflow:hidden}
+  .projects{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:3px;overflow:hidden}
   .card{background:var(--paper);padding:clamp(22px,3vw,30px)}
-  .card .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
+  .card .meta{font-size:13px;letter-spacing:.02em;color:var(--faint);margin:0 0 10px}
   .card h3{font-size:20px;font-weight:500;line-height:1.24;letter-spacing:-.01em;margin:0 0 10px}
-  .card p{font-size:15px;line-height:1.55;color:var(--muted);margin:0 0 16px}
-  .tags{display:flex;flex-wrap:wrap;gap:6px}
-  .tags span{font-family:var(--mono);font-size:10.5px;letter-spacing:.02em;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:3px 8px}
+  .card p{font-size:15.5px;line-height:1.55;color:var(--muted);margin:0}
 
   .pubgroup{display:grid;grid-template-columns:130px 1fr;gap:clamp(14px,3vw,32px);padding:24px 0;border-top:1px solid var(--line-soft)}
   .pubgroup:first-of-type{border-top:0;padding-top:4px}
-  .glab{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding-top:5px}
+  .glab{font-size:14px;letter-spacing:.02em;color:var(--faint);padding-top:4px}
   .pub{margin:0 0 22px}
   .pub:last-child{margin-bottom:0}
-  .pub .kind{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:inline-block;margin-bottom:5px}
+  .pub .kind{font-size:13px;color:var(--faint);display:block;margin-bottom:4px}
   .pub .t{font-size:18px;line-height:1.34;margin:0 0 5px;font-weight:500}
   .pub .t a{color:var(--ink)}
   .pub .t a:hover{color:var(--accent)}
-  .pub .a{font-size:14.5px;color:var(--muted);line-height:1.5;margin:0}
-  .pub .a b{color:var(--ink);font-weight:600}
-  .pub .v{font-style:italic;color:var(--muted)}
+  .pub .a{font-size:15px;color:var(--muted);line-height:1.5;margin:0}
+  .pub .a .me{color:var(--ink)}
+  .pub .v{font-style:italic}
+  .pub .doi{color:var(--faint);word-break:break-all}
 
   .scholar-cta{margin-top:28px}
-  .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:9px 17px;background:var(--panel);transition:border-color .18s,color .18s}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-size:15px;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 18px;background:var(--panel);transition:border-color .18s,color .18s}
   .btn:hover{color:var(--accent);border-color:var(--accent);text-decoration:none}
   .btn .arrow{color:var(--accent)}
 
-  .subhead{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 14px}
-  .block{margin-top:40px}
+  .subhead{font-size:14px;letter-spacing:.02em;color:var(--faint);margin:0 0 12px}
+  .block{margin-top:38px}
   .block:first-of-type{margin-top:0}
-  .rows.compact li{grid-template-columns:64px 1fr;padding:16px 0}
-  .rows.compact .body{font-size:15px;line-height:1.45}
-  .rows.compact .body .src{color:var(--muted);font-style:italic}
+  .rows.compact li{grid-template-columns:60px 1fr;padding:15px 0}
+  .rows.compact .body{font-size:15.5px;line-height:1.45}
+  .rows.compact .body .src{color:var(--muted)}
 
   footer{margin-top:clamp(56px,8vw,92px);padding-top:26px;border-top:1px solid var(--line-soft)}
-  .foot-links{display:flex;flex-wrap:wrap;gap:18px;margin:0 0 16px}
-  .foot-links a{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;color:var(--ink)}
+  .foot-links{display:flex;flex-wrap:wrap;gap:20px;margin:0 0 14px}
+  .foot-links a{font-size:15px;color:var(--ink)}
   .foot-links a:hover{color:var(--accent);text-decoration:none}
-  .colophon{font-family:var(--mono);font-size:11px;letter-spacing:.02em;color:var(--faint);line-height:1.7;margin:0}
+  .colophon{font-size:14px;color:var(--faint);margin:0}
 
   @media (max-width:880px){
     .wrap{grid-template-columns:1fr;gap:0}
     .side{position:static;padding:clamp(28px,7vw,40px) 0 8px}
-    .side .name{font-size:24px}
     .avatar{margin-left:0;margin-right:0}
     .nav{display:none}
     main{padding-top:8px}
@@ -135,7 +128,6 @@
     .glab,.rows .lab{padding-top:0}
     body{font-size:17px}
   }
-  @media (max-width:420px){.lead{font-size:19px}}
 </style>
 </head>
 
@@ -150,6 +142,7 @@
       <li><a href="mailto:eduardoareboucas@gmail.com"><span class="k">@</span><span>eduardoareboucas@gmail.com</span></a></li>
       <li><a href="https://scholar.google.com/citations?user=sC4hyeEAAAAJ&hl=pt-BR" target="_blank" rel="noopener"><span class="k">◐</span><span>Google Scholar</span></a></li>
       <li><a href="https://orcid.org/0009-0001-2009-2753" target="_blank" rel="noopener"><span class="k">iD</span><span>ORCID</span></a></li>
+      <li><a href="https://www.researchgate.net/profile/Eduardo-Reboucas" target="_blank" rel="noopener"><span class="k">RG</span><span>ResearchGate</span></a></li>
       <li><a href="http://lattes.cnpq.br/6738448008695930" target="_blank" rel="noopener"><span class="k">▤</span><span>Lattes</span></a></li>
     </ul>
 
@@ -177,8 +170,8 @@
   <main>
     <header class="hero">
       <h1>Eduardo Azevedo Rebouças</h1>
-      <p class="lead en">Psychologist and researcher on masculinities, gender-based violence, cyberpsychology and psychometrics, moving toward <em>data science for public policy</em>.</p>
-      <p class="lead pt">Psicólogo e pesquisador em masculinidades, violência de gênero, ciberpsicologia e psicometria, caminhando para a <em>ciência de dados aplicada a políticas públicas</em>.</p>
+      <p class="lead en">Psychologist and researcher on masculinities, gender-based violence, cyberpsychology and psychometrics, moving toward data science for public policy.</p>
+      <p class="lead pt">Psicólogo e pesquisador em masculinidades, violência de gênero, ciberpsicologia e psicometria, caminhando para a ciência de dados aplicada a políticas públicas.</p>
       <div class="identity">
         <p class="role">
           <span class="en">MSc in Psychology · Federal University of Amazonas (UFAM)</span>
@@ -193,20 +186,16 @@
       <p class="eyebrow"><span class="en">About</span><span class="pt">Sobre</span></p>
       <div class="prose en">
         <p>I am a psychologist and MSc student in Psychology at the Federal University of Amazonas (UFAM), in Manaus, advised by Prof. Marck de Souza Torres and funded by FAPEAM. I am a member of the Cyberpsychology, Mental Health and Technology Lab (LABCIBERPSI), the Clinical and Assessment Contexts Research Group (GPeCCA) and the Gender, Violence, Affects and Sexualities Research Group (LEVS), all at UFAM.</p>
-        <p>My work centres on psychosocial interventions and assessment, with an interest in gender, masculinities, violence and cyberpsychology in the Amazonian and Brazilian context. I facilitate reflexive and accountability groups for men who have used violence, including work with the SARE service (Serviço de Atendimento, Responsabilização e Educação do Agressor).</p>
-        <p>I currently hold an Abdias Nascimento Programme fellowship (CAPES) and am based in Manchester, UK, until November 2026, where I am affiliated with MACTRI at MEAP (Make Education a Priority), supervised by Prof. Dr. Ornette Clennon. There I am developing a comparative study of institutional responses to domestic-violence perpetration in Brazil and the United Kingdom.</p>
+        <p>My work centres on psychosocial interventions and assessment, with an interest in gender, masculinities, violence and cyberpsychology in the Amazonian and Brazilian context. I facilitate reflexive and accountability groups for men who have used violence.</p>
+        <p>I currently hold an Abdias Nascimento Programme fellowship (CAPES) and am based in Manchester, UK, where I am affiliated with MACTRI at MEAP (Make Education a Priority). There I am developing a comparative study of institutional responses to domestic-violence perpetration in Brazil and the United Kingdom.</p>
       </div>
       <div class="prose pt">
         <p>Sou psicólogo e mestrando em Psicologia pela Universidade Federal do Amazonas (UFAM), em Manaus, sob orientação do Prof. Marck de Souza Torres e com bolsa da FAPEAM. Integro o Laboratório de Ciberpsicologia, Saúde Mental e Tecnologia (LABCIBERPSI), o Grupo de Pesquisa em Contextos Clínicos e Avaliativos (GPeCCA) e o Grupo de Estudos e Pesquisas em Gênero, Violência, Afetividades e Sexualidades (LEVS), todos na UFAM.</p>
-        <p>Meu trabalho se concentra em intervenções e avaliações psicossociais, com interesse em gênero, masculinidades, violências e ciberpsicologia no contexto amazônico e brasileiro. Facilito grupos reflexivos e responsabilizantes para homens autores de violência, incluindo o trabalho junto ao SARE (Serviço de Atendimento, Responsabilização e Educação do Agressor).</p>
-        <p>Atualmente sou bolsista do Programa Abdias Nascimento (CAPES) e estou baseado em Manchester, no Reino Unido, até novembro de 2026, onde estou vinculado ao MACTRI, no MEAP (Make Education a Priority), sob supervisão do Prof. Dr. Ornette Clennon. Ali desenvolvo um estudo comparado das respostas institucionais à autoria de violência doméstica no Brasil e no Reino Unido.</p>
+        <p>Meu trabalho se concentra em intervenções e avaliações psicossociais, com interesse em gênero, masculinidades, violências e ciberpsicologia no contexto amazônico e brasileiro. Facilito grupos reflexivos e responsabilizantes para homens autores de violência.</p>
+        <p>Atualmente sou bolsista do Programa Abdias Nascimento (CAPES) e estou baseado em Manchester, no Reino Unido, onde estou vinculado ao MACTRI, no MEAP (Make Education a Priority). Ali desenvolvo um estudo comparado das respostas institucionais à autoria de violência doméstica no Brasil e no Reino Unido.</p>
       </div>
-      <div class="eixos">
-        <span class="en">Gender &amp; Masculinities</span><span class="pt">Gênero e Masculinidades</span>
-        <span class="en">Violence</span><span class="pt">Violências</span>
-        <span class="en">Cyberpsychology</span><span class="pt">Ciberpsicologia</span>
-        <span class="en">Psychological Assessment &amp; Psychometrics</span><span class="pt">Avaliação Psicológica e Psicometria</span>
-      </div>
+      <p class="areas en"><span class="lbl">Research areas:</span> gender and masculinities, violence, cyberpsychology, psychological assessment and psychometrics.</p>
+      <p class="areas pt"><span class="lbl">Áreas de pesquisa:</span> gênero e masculinidades, violências, ciberpsicologia, avaliação psicológica e psicometria.</p>
     </section>
 
     <!-- EDUCATION -->
@@ -216,19 +205,17 @@
         <li>
           <span class="lab en">2024 – present</span><span class="lab pt">2024 – atual</span>
           <span class="body">
-            <b><span class="en">MSc in Psychology (in progress)</span><span class="pt">Mestrado em Psicologia (em andamento)</span></b>
-            <span class="sub"><span class="en">Federal University of Amazonas (UFAM).</span><span class="pt">Universidade Federal do Amazonas (UFAM).</span></span>
-            <span class="sub"><span class="en">Advisor: Prof. Marck de Souza Torres · Funding: FAPEAM.</span><span class="pt">Orientador: Prof. Marck de Souza Torres · Bolsa: FAPEAM.</span></span>
-            <span class="sub"><i>Masculinidades, Sexismo e Mitos de Aceitação da Violência Doméstica: Evidências em Grupos Reflexivos e Responsabilizantes para Homens Autores de Violência.</i></span>
+            <span class="nm"><span class="en">MSc in Psychology (in progress)</span><span class="pt">Mestrado em Psicologia (em andamento)</span></span>
+            <span class="sub"><span class="en">Federal University of Amazonas (UFAM). Advisor: Prof. Marck de Souza Torres. Funding: FAPEAM.</span><span class="pt">Universidade Federal do Amazonas (UFAM). Orientador: Prof. Marck de Souza Torres. Bolsa: FAPEAM.</span></span>
+            <span class="title">"Masculinidades, Sexismo e Mitos de Aceitação da Violência Doméstica: Evidências em Grupos Reflexivos e Responsabilizantes para Homens Autores de Violência."</span>
           </span>
         </li>
         <li>
           <span class="lab">2018 – 2024</span>
           <span class="body">
-            <b><span class="en">BSc in Psychology</span><span class="pt">Bacharelado em Psicologia</span></b>
-            <span class="sub">Faculdade Metropolitana de Manaus (FAMETRO).</span>
-            <span class="sub"><span class="en">Advisor: Prof. Gizelly de Carvalho Martins.</span><span class="pt">Orientadora: Prof.ª Gizelly de Carvalho Martins.</span></span>
-            <span class="sub"><i>A influência das redes sociais na construção da autoimagem dos adolescentes brasileiros.</i></span>
+            <span class="nm"><span class="en">BSc in Psychology</span><span class="pt">Bacharelado em Psicologia</span></span>
+            <span class="sub"><span class="en">Faculdade Metropolitana de Manaus (FAMETRO). Advisor: Prof. Gizelly de Carvalho Martins.</span><span class="pt">Faculdade Metropolitana de Manaus (FAMETRO). Orientadora: Prof.ª Gizelly de Carvalho Martins.</span></span>
+            <span class="title">"A influência das redes sociais na construção da autoimagem dos adolescentes brasileiros."</span>
           </span>
         </li>
       </ul>
@@ -242,14 +229,14 @@
         <div class="glab"><span class="en">In English</span><span class="pt">Em inglês</span></div>
         <div>
           <div class="pub">
-            <span class="kind"><span class="en">Preprint · Under review · 2026</span><span class="pt">Preprint · Em revisão · 2026</span></span>
+            <span class="kind"><span class="en">Preprint · under review · 2026</span><span class="pt">Preprint · em avaliação · 2026</span></span>
             <p class="t"><a href="https://doi.org/10.21203/rs.3.rs-9784559/v1" target="_blank" rel="noopener">Cross-cultural adaptation and validation of the Domestic Violence Myth Acceptance Scale in Brazil: a psychometric analysis</a></p>
-            <p class="a"><b>Rebouças, E. A.</b>, de Souza Torres, M., de Almeida Santos, A., &amp; dos Reis, D. C. <span class="v">Research Square</span> <span class="pt">(preprint); em avaliação na</span><span class="en">(preprint); under review at</span> <span class="v">BMC Psychology</span>. https://doi.org/10.21203/rs.3.rs-9784559/v1</p>
+            <p class="a"><span class="me">Rebouças, E. A.</span>, de Souza Torres, M., de Almeida Santos, A., &amp; dos Reis, D. C. <span class="v">Research Square</span> <span class="pt">(preprint), em avaliação na</span><span class="en">(preprint), under review at</span> <span class="v">BMC Psychology</span>. <span class="doi">https://doi.org/10.21203/rs.3.rs-9784559/v1</span></p>
           </div>
           <div class="pub">
             <span class="kind"><span class="en">Book chapter · 2026</span><span class="pt">Capítulo de livro · 2026</span></span>
             <p class="t">Intersectional Vulnerabilities and Sexual Violence Among Indigenous Girls in the Brazilian Amazon</p>
-            <p class="a">de Souza Torres, M., Veloso, M. M. X., dos Reis, D. C., Bastos, A. M., Neto, M. F. G. M., <b>Rebouças, E. A.</b>, &amp; Pereira, M. T. <span class="v pt">Em</span><span class="v en">In</span> <span class="v">The Epidemiology of Violence Against Women</span> (1ª ed., pp. 253–280). IGI Global Scientific Publishing.</p>
+            <p class="a">de Souza Torres, M., Veloso, M. M. X., dos Reis, D. C., Bastos, A. M., Neto, M. F. G. M., <span class="me">Rebouças, E. A.</span>, &amp; Pereira, M. T. <span class="pt">Em</span><span class="en">In</span> <span class="v">The Epidemiology of Violence Against Women</span> (1ª ed., pp. 253–280). IGI Global Scientific Publishing.</p>
           </div>
         </div>
       </div>
@@ -259,23 +246,23 @@
         <div>
           <div class="pub">
             <span class="kind"><span class="en">Article · 2026</span><span class="pt">Artigo · 2026</span></span>
-            <p class="t">Violência online contra mulheres no contexto brasileiro: uma revisão de escopo</p>
-            <p class="a"><b>Rebouças, E. A.</b>, de Almeida Santos, A., &amp; de Souza Torres, M. <span class="v">Revista de Psicología</span>, 35(1).</p>
+            <p class="t"><a href="https://doi.org/10.5354/0719-0581.2026.79497" target="_blank" rel="noopener">Violência online contra mulheres no contexto brasileiro: uma revisão de escopo</a></p>
+            <p class="a"><span class="me">Rebouças, E. A.</span>, de Almeida Santos, A., &amp; de Souza Torres, M. <span class="v">Revista de Psicología</span>, 35(1). <span class="doi">https://doi.org/10.5354/0719-0581.2026.79497</span></p>
           </div>
           <div class="pub">
             <span class="kind"><span class="en">Article · 2024</span><span class="pt">Artigo · 2024</span></span>
-            <p class="t">Violência contra a mulher a partir da perspectiva de homens universitários em Manaus/AM</p>
-            <p class="a"><b>Rebouças, E. A.</b>, Wiggers, R., &amp; Lima, N. S. <span class="v">Ambivalências</span>, 12, 135–155.</p>
+            <p class="t"><a href="https://doi.org/10.21665/2318-3888.v12n23p135" target="_blank" rel="noopener">Violência contra a mulher a partir da perspectiva de homens universitários em Manaus/AM</a></p>
+            <p class="a"><span class="me">Rebouças, E. A.</span>, Wiggers, R., &amp; Lima, N. S. <span class="v">Ambivalências</span>, 12, 135–155. <span class="doi">https://doi.org/10.21665/2318-3888.v12n23p135</span></p>
           </div>
           <div class="pub">
             <span class="kind"><span class="en">Book chapter · 2025</span><span class="pt">Capítulo de livro · 2025</span></span>
             <p class="t">Adultez emergente na era da hiperconexão</p>
-            <p class="a">Santos, A. A., Torres, M. S., <b>Rebouças, E. A.</b>, &amp; Dutra-Thomé, L. <span class="v pt">Em</span><span class="v en">In</span> F. Negreiros &amp; I. P. F. S. Chariglione (Org.), <span class="v">Psicologia do Desenvolvimento Crítica: realidades da adultez brasileira</span> (1ª ed., v. 3, pp. 121–136). Campinas: Alínea.</p>
+            <p class="a">Santos, A. A., Torres, M. S., <span class="me">Rebouças, E. A.</span>, &amp; Dutra-Thomé, L. <span class="pt">Em</span><span class="en">In</span> F. Negreiros &amp; I. P. F. S. Chariglione (Org.), <span class="v">Psicologia do Desenvolvimento Crítica: realidades da adultez brasileira</span> (1ª ed., v. 3, pp. 121–136). Campinas: Alínea.</p>
           </div>
           <div class="pub">
             <span class="kind"><span class="en">Book chapter · 2025</span><span class="pt">Capítulo de livro · 2025</span></span>
             <p class="t">Grupos reflexivos para homens autores de violência: desafios e próximos passos para o enfrentamento da violência contra a mulher</p>
-            <p class="a"><b>Rebouças, E. A.</b>, &amp; Torres, M. S. <span class="v pt">Em</span><span class="v en">In</span> L. C. Teixeira &amp; L. Danziato (Org.), <span class="v">Violência de gênero: saberes e práticas interdisciplinares</span> (1ª ed., pp. 245–258). Curitiba: Editora CRV.</p>
+            <p class="a"><span class="me">Rebouças, E. A.</span>, &amp; Torres, M. S. <span class="pt">Em</span><span class="en">In</span> L. C. Teixeira &amp; L. Danziato (Org.), <span class="v">Violência de gênero: saberes e práticas interdisciplinares</span> (1ª ed., pp. 245–258). Curitiba: Editora CRV.</p>
           </div>
         </div>
       </div>
@@ -295,21 +282,21 @@
       <div class="block">
         <p class="subhead"><span class="en">Presentations</span><span class="pt">Apresentações</span></p>
         <ul class="rows compact">
-          <li><span class="lab">2026</span><span class="body">Between Automatism and Care: Masculinities, Gender-Based Violence and Reflexive Groups in Brazil. <span class="src">Modern Masculinities Conference, University of Westminster, London </span></span></li>
-          <li><span class="lab">2025</span><span class="body">Adaptação Semântica da Escala de Aceitação de Mitos da Violência Doméstica para o Português Brasileiro <span class="pt">(com</span><span class="en">(with</span> M. S. Torres). <span class="src">7º Congresso Brasileiro de Psicologia: Ciência e Profissão.</span></span></li>
-          <li><span class="lab">2025</span><span class="body">Desafios e Potencialidades dos Grupos Reflexivos e Responsabilizantes para Homens Autores de Violência <span class="pt">(com</span><span class="en">(with</span> M. S. Torres). <span class="src">7º Congresso Brasileiro de Psicologia: Ciência e Profissão.</span></span></li>
-          <li><span class="lab">2025</span><span class="body">Caracterização, Desafios e Enfrentamento da Violência Online Contra Mulheres <span class="pt">(com</span><span class="en">(with</span> A. A. Santos &amp; M. S. Torres). <span class="src">7º Congresso Brasileiro de Psicologia: Ciência e Profissão.</span></span></li>
-          <li><span class="lab">2025</span><span class="body">Estratégias de Enfrentamento da Violência Online Contra Mulheres <span class="pt">(com</span><span class="en">(with</span> A. A. Santos &amp; M. S. Torres). <span class="src">I Simpósio de Pesquisa em Ciberpsicologia e Interações Sociais.</span></span></li>
-          <li><span class="lab">2025</span><span class="body">Os Principais Tipos de Violência Contra Mulheres em Ambientes Digitais no Brasil <span class="pt">(com</span><span class="en">(with</span> A. A. Santos &amp; M. S. Torres). <span class="src">I Simpósio de Pesquisa em Ciberpsicologia e Interações Sociais.</span></span></li>
-          <li><span class="lab">2025</span><span class="body">Letramento em Gênero, Sexualidade e Violência na formação de estudantes da Saúde em Manaus, Amazonas <span class="pt">(com</span><span class="en">(with</span> A. C. D. Araujo &amp; H. M. M. Perez). <span class="src">I Simpósio Intersetorial para Enfrentamento da Violência.</span></span></li>
-          <li><span class="lab">2025</span><span class="body">Grupos Reflexivos e Responsabilizantes para Homens Autores de Violência contra a Mulher <span class="pt">(com</span><span class="en">(with</span> B. S. Rocha). <span class="src">II Jornada Amazonense da Sociedade Brasileira de Psicologia.</span></span></li>
+          <li><span class="lab">2026</span><span class="body">Between Automatism and Care: Masculinities, Gender-Based Violence and Reflexive Groups in Brazil. <span class="src">Modern Masculinities Conference, University of Westminster, London.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Adaptação Semântica da Escala de Aceitação de Mitos da Violência Doméstica para o Português Brasileiro <span class="pt">(com</span><span class="en">(with</span> M. S. Torres). <span class="src">7º Congresso Brasileiro de Psicologia: Ciência e Profissão, Brasília.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Desafios e Potencialidades dos Grupos Reflexivos e Responsabilizantes para Homens Autores de Violência <span class="pt">(com</span><span class="en">(with</span> M. S. Torres). <span class="src">7º Congresso Brasileiro de Psicologia: Ciência e Profissão, Brasília.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Caracterização, Desafios e Enfrentamento da Violência Online Contra Mulheres <span class="pt">(com</span><span class="en">(with</span> A. A. Santos &amp; M. S. Torres). <span class="src">7º Congresso Brasileiro de Psicologia: Ciência e Profissão, Brasília.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Estratégias de Enfrentamento da Violência Online Contra Mulheres <span class="pt">(com</span><span class="en">(with</span> A. A. Santos &amp; M. S. Torres). <span class="src">I Simpósio de Pesquisa em Ciberpsicologia e Interações Sociais, Maceió.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Os Principais Tipos de Violência Contra Mulheres em Ambientes Digitais no Brasil <span class="pt">(com</span><span class="en">(with</span> A. A. Santos &amp; M. S. Torres). <span class="src">I Simpósio de Pesquisa em Ciberpsicologia e Interações Sociais, Maceió.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Letramento em Gênero, Sexualidade e Violência na formação de estudantes da Saúde em Manaus, Amazonas <span class="pt">(com</span><span class="en">(with</span> A. C. D. Araujo &amp; H. M. M. Perez). <span class="src">I Simpósio Intersetorial para Enfrentamento da Violência, Criciúma.</span></span></li>
+          <li><span class="lab">2025</span><span class="body">Grupos Reflexivos e Responsabilizantes para Homens Autores de Violência contra a Mulher <span class="pt">(com</span><span class="en">(with</span> B. S. Rocha). <span class="src">II Jornada Amazonense da Sociedade Brasileira de Psicologia, Manaus.</span></span></li>
         </ul>
       </div>
 
       <div class="block">
         <p class="subhead"><span class="en">Honours</span><span class="pt">Prêmios e títulos</span></p>
         <ul class="rows compact">
-          <li><span class="lab">2025</span><span class="body"><span class="en">Honourable Mention</span><span class="pt">Menção Honrosa</span>, I Simpósio Intersetorial para Enfrentamento da Violência (Unesc): "Letramento em Gênero, Sexualidade e Violência na formação de estudantes da Saúde em Manaus, Amazonas".</span></li>
+          <li><span class="lab">2025</span><span class="body"><span class="en">Honourable Mention</span><span class="pt">Menção Honrosa</span>, I Simpósio Intersetorial para Enfrentamento da Violência (Unesc, Criciúma): "Letramento em Gênero, Sexualidade e Violência na formação de estudantes da Saúde em Manaus, Amazonas".</span></li>
           <li><span class="lab">2021</span><span class="body"><span class="en">Honourable Mention</span><span class="pt">Menção Honrosa</span>, <span class="en">scientific-initiation project</span><span class="pt">projeto de iniciação científica</span> "Prazeres limítrofes: um estudo das sexualidades de homens em Manaus" (UFAM).</span></li>
           <li><span class="lab">2019</span><span class="body"><span class="en">Honourable Mention</span><span class="pt">Menção Honrosa</span>, <span class="en">scientific-initiation project</span><span class="pt">projeto de iniciação científica</span> "Violência contra a mulher compartilhada por homens em Manaus" (UFAM).</span></li>
         </ul>
@@ -323,14 +310,14 @@
         <li>
           <span class="lab">2026</span>
           <span class="body">
-            <b>Psicopatologia II <span class="gloss">· Psychopathology II</span></b>
+            <span class="nm">Psicopatologia II <span class="gloss">· Psychopathology II</span></span>
             <span class="sub"><span class="en">Teaching assistant, undergraduate Psychology, UFAM.</span><span class="pt">Professor assistente, Bacharelado em Psicologia, UFAM.</span></span>
           </span>
         </li>
         <li>
           <span class="lab">2025</span>
           <span class="body">
-            <b>Psicometria <span class="gloss">· Psychometrics</span></b>
+            <span class="nm">Psicometria <span class="gloss">· Psychometrics</span></span>
             <span class="sub"><span class="en">Teaching assistant, undergraduate Psychology, UFAM.</span><span class="pt">Professor assistente, Bacharelado em Psicologia, UFAM.</span></span>
           </span>
         </li>
@@ -346,11 +333,6 @@
           <h3><span class="en">Masculinity, sexism and domestic-violence myths</span><span class="pt">Masculinidades, sexismo e mitos da violência doméstica</span></h3>
           <p class="en">My master's project, examining the links between conceptions of masculinity, ambivalent sexism and the acceptance of domestic-violence myths among men in reflexive and accountability groups. It comprises two studies: the cross-cultural adaptation and psychometric validation of the DVMAS for Brazil, and a quasi-experimental, longitudinal pre/post design measuring psychosocial change.</p>
           <p class="pt">Meu projeto de mestrado, que examina as relações entre concepções de masculinidade, sexismo ambivalente e aceitação de mitos da violência doméstica em homens de grupos reflexivos e responsabilizantes. Reúne dois estudos: a adaptação transcultural e validação psicométrica da DVMAS para o Brasil, e um delineamento quase-experimental, longitudinal, com medidas pré e pós-intervenção para analisar mudanças psicossociais.</p>
-          <div class="tags">
-            <span class="en">Masculinities</span><span class="pt">Masculinidades</span>
-            <span class="en">Psychometrics</span><span class="pt">Psicometria</span>
-            <span class="en">Gender-based violence</span><span class="pt">Violência de gênero</span>
-          </div>
         </article>
 
         <article class="card">
@@ -358,11 +340,6 @@
           <h3><span class="en">Institutional responses to domestic-violence perpetration: Brazil and the UK</span><span class="pt">Respostas institucionais à autoria de violência doméstica: Brasil e Reino Unido</span></h3>
           <p class="en">A comparative study of how institutions in Brazil and the United Kingdom respond to men who perpetrate domestic violence, and the main output of my Abdias Nascimento fellowship. Developed in Manchester in affiliation with MACTRI at MEAP (Make Education a Priority), supervised by Prof. Dr. Ornette Clennon.</p>
           <p class="pt">Um estudo comparado sobre como as instituições no Brasil e no Reino Unido respondem aos homens autores de violência doméstica, principal entrega da minha bolsa do Programa Abdias Nascimento. Desenvolvido em Manchester, com vínculo ao MACTRI, no MEAP (Make Education a Priority), sob supervisão do Prof. Dr. Ornette Clennon.</p>
-          <div class="tags">
-            <span class="en">Comparative</span><span class="pt">Comparado</span>
-            <span class="en">Public policy</span><span class="pt">Política pública</span>
-            <span class="en">Masculinities</span><span class="pt">Masculinidades</span>
-          </div>
         </article>
 
         <article class="card">
@@ -370,11 +347,6 @@
           <h3><span class="en">Masculinities and Care: Online Reflexive Group with Men</span><span class="pt">Masculinidades e Cuidado: Grupo Reflexivo Online com Homens</span></h3>
           <p class="en">Grounded in the MEMOH methodology, an education ecosystem that mobilises men for gender equity through debate on masculinities, this initiative ran reflexive groups online. Structured as eight fortnightly meetings for 20 men from across Brazil, it addressed male socialisation, everyday violence and the pursuit of care. Articulated with my master's research, it shifted the focus from perpetrators toward men acting as multipliers for gender equity, aligned with SDGs 3, 5 and 16 of the 2030 Agenda.</p>
           <p class="pt">Fundamentada na metodologia MEMOH, um ecossistema de educação que mobiliza homens pela equidade de gênero por meio do debate de masculinidades, a iniciativa conduziu grupos reflexivos online. Estruturada em oito encontros quinzenais para 20 homens de todo o Brasil, abordou socialização masculina, violências cotidianas e a busca pelo cuidado. Articulada à minha pesquisa de mestrado, deslocou o foco dos autores de violência para homens que atuam como multiplicadores da equidade de gênero, alinhando-se aos ODS 3, 5 e 16 da Agenda 2030.</p>
-          <div class="tags">
-            <span class="en">Prevention</span><span class="pt">Prevenção</span>
-            <span class="en">Outreach</span><span class="pt">Extensão</span>
-            <span>Online</span>
-          </div>
         </article>
 
         <article class="card">
@@ -382,11 +354,6 @@
           <h3>Cine Atlas</h3>
           <p class="en">A cycle of film-debates for critical reflection on the social constructions of masculinity, power relations and the confronting of gender-based violence in the Amazonian context. Using cinema as an outreach device, it combines curation of audiovisual works, facilitation of discussion circles and the systematisation of knowledge through art, seeking to denaturalise hegemonic masculinity and strengthen gender equity, aligned with SDG 5 of the 2030 Agenda.</p>
           <p class="pt">Um ciclo de cine-debates para a reflexão crítica sobre as construções sociais das masculinidades, as relações de poder e o enfrentamento das violências de gênero no contexto amazônico. Usando o cinema como dispositivo extensionista, reúne curadoria de obras audiovisuais, mediação de rodas de conversa e sistematização de conhecimentos por meio da arte, buscando desnaturalizar a masculinidade hegemônica e fortalecer a equidade de gênero, em alinhamento ao ODS 5 da Agenda 2030.</p>
-          <div class="tags">
-            <span class="en">Cinema</span><span class="pt">Cinema</span>
-            <span class="en">Outreach</span><span class="pt">Extensão</span>
-            <span class="en">Amazon</span><span class="pt">Amazônia</span>
-          </div>
         </article>
 
         <article class="card">
@@ -394,11 +361,6 @@
           <h3><span class="en">Prazeres limítrofes: masculine sexualities in Manaus</span><span class="pt">Prazeres limítrofes: sexualidades de homens em Manaus</span></h3>
           <p class="en">A scientific-initiation study of masculine sexualities among MSM groups in Manaus, examining conceptions and lived experiences of eroticism and sexual roles, and reflecting on contemporary normative models of male sexuality in northern Brazil.</p>
           <p class="pt">Um estudo de iniciação científica sobre as sexualidades masculinas em grupos de HSH em Manaus, examinando concepções e vivências do erotismo e dos papéis sexuais, e refletindo sobre modelos normativos contemporâneos da sexualidade masculina no Norte do Brasil.</p>
-          <div class="tags">
-            <span class="en">Sexualities</span><span class="pt">Sexualidades</span>
-            <span class="en">Masculinities</span><span class="pt">Masculinidades</span>
-            <span class="en">Scientific initiation</span><span class="pt">Iniciação científica</span>
-          </div>
         </article>
 
         <article class="card">
@@ -406,11 +368,6 @@
           <h3><span class="en">Violence against women as shared by men in Manaus</span><span class="pt">Violência contra a mulher compartilhada por homens em Manaus</span></h3>
           <p class="en">A scientific-initiation study of how young, university-aged men interpret and justify masculinities and violent practices, seeking locally grounded evidence to inform the prevention of violence against women.</p>
           <p class="pt">Um estudo de iniciação científica sobre como homens jovens e universitários interpretam e justificam masculinidades e práticas violentas, buscando evidências locais para fundamentar a prevenção da violência contra a mulher.</p>
-          <div class="tags">
-            <span class="en">Gender</span><span class="pt">Gênero</span>
-            <span class="en">Prevention</span><span class="pt">Prevenção</span>
-            <span class="en">Scientific initiation</span><span class="pt">Iniciação científica</span>
-          </div>
         </article>
       </div>
 
@@ -419,6 +376,7 @@
           <a href="mailto:eduardoareboucas@gmail.com">Email</a>
           <a href="https://scholar.google.com/citations?user=sC4hyeEAAAAJ&hl=pt-BR" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://orcid.org/0009-0001-2009-2753" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://www.researchgate.net/profile/Eduardo-Reboucas" target="_blank" rel="noopener">ResearchGate</a>
           <a href="http://lattes.cnpq.br/6738448008695930" target="_blank" rel="noopener">Lattes</a>
         </div>
         <p class="colophon">© <span id="yr">2026</span> Eduardo Azevedo Rebouças · Manaus &amp; Manchester</p>
